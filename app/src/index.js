@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import FormLogin from './Login';
+import FormCita from './Agenda';
 import './style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +13,8 @@ const Jsx = () =>{
     <>
       {inicio === true ? (
         <>
-          <h1>Bienvenido</h1>
+          <h1>Bienvenido a la clinica de la vida</h1>
+          <FormCita/>
           <button onClick={() => cambiarInicio(false)}>Cerrar Sesion</button>
         </>
       ) : (
