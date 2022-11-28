@@ -47,7 +47,7 @@ const FormLogin = (props) => {
                         value={password} 
                         onChange={onChange}></input>
                 </div>
-                <button>Iniciar Sesion</button>
+                <button>Confirmar</button>
             </form>
         </>
     );

@@ -23,7 +23,7 @@ const FormSingIn = (props) => {
         e.preventDefault();
         if(newPassword === confirmPassword){
             alert("Usuario creado correctamente");
-            //Falta ver lo de cambiar el true a iniciar secion 
+            props.cambiarRegistro(true);
         }
         else{
             alert("Las contraseñas no coinciden");
@@ -60,8 +60,10 @@ const FormSingIn = (props) => {
                         value={confirmPassword} 
                         onChange={onChange}></input>
                 </div>
-                <button>Crear Usuario</button>
+                <button>Confirmar</button>
             </form>
         </>
     );
 };
+
+export default FormSingIn;

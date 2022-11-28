@@ -2,12 +2,15 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import FormLogin from './Login';
 import FormCita from './Agenda';
+import FormSingIn from './SingIn';
+import MyApp from './Calendario';
 import './style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const Jsx = () =>{
   const[inicio, cambiarInicio] = useState(false);
+  const[registro, cambiarRegistro] = useState(false);
 
   return(
     <>
@@ -15,12 +18,24 @@ const Jsx = () =>{
         <>
           <h1>Bienvenido a la clinica de la vida</h1>
           <FormCita/>
+          <MyApp/>
           <button onClick={() => cambiarInicio(false)}>Cerrar Sesion</button>
         </>
       ) : (
         <>
-          <h1>Iniciar Sesion</h1>
-          <FormLogin cambiarInicio={cambiarInicio}/>
+        <button onClick={() => cambiarRegistro(false)}>Iniciar Sesion</button>
+        <button onClick={() => cambiarRegistro(true)}>Crear Usuario</button>
+          {registro === false ? (
+            <>
+              <h1>Iniciar Sesion</h1>
+              <FormLogin cambiarInicio={cambiarInicio}/>
+            </>
+          ) : (
+            <>
+              <h1>Crear Usuario</h1>
+              <FormSingIn  cambiarRegistro={cambiarRegistro}/>
+            </>
+          )}
         </>
       )}
     </>
@@ -28,3 +43,4 @@ const Jsx = () =>{
 };
 
 root.render(<Jsx/>);
+
