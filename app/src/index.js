@@ -11,6 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const Jsx = () =>{
   const[inicio, cambiarInicio] = useState(false);
   const[registro, cambiarRegistro] = useState(false);
+  const[agenda, cambiarAgenda] = useState(false)
 
   return(
     <>
