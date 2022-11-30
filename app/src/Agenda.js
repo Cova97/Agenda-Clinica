@@ -28,7 +28,6 @@ const FormCita = () => {
                     <label>Edad</label>
                     <input type="text" name="age" id="age"></input>
                 </div>
-                <button>Confirmar</button>
             </form>
         </>
     );

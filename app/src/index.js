@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import FormLogin from './Login';
 import FormCita from './Agenda';
 import FormSingIn from './SingIn';
-import MyApp from './Calendario';
+import Dates from './Calendario';
 import './style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +18,7 @@ const Jsx = () =>{
         <>
           <h1>Bienvenido a la clinica de la vida</h1>
           <FormCita/>
-          <MyApp/>
+          <Dates/>
           <button onClick={() => cambiarInicio(false)}>Cerrar Sesion</button>
         </>
       ) : (
