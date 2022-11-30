@@ -1,9 +1,10 @@
 body{
     background-color: #EAF2FC;
+    font-family: sans-serif;
 }
 
 button{
-    background-color: #4CAF50;
+    background-color: #3D83DF;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -37,7 +38,7 @@ input[type=password], select {
 
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #3D83DF;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -53,4 +54,60 @@ input[type=submit]:hover {
 div {
     border-radius: 5px;
     padding: 20px;
+}
+.card {
+    background-color: #ffffff;
+    border-color: #313D60;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+}
+.container{
+    height: 400px;
+}
+.card-header{
+    color: #53AAFF;
+    font-size: 25px;
+    font-weight: bold;
+    height: 12px;
+    text-align: center;  
+} 
+.card-title{
+    text-align: left;
+    color: #313D60;
+    font-weight: bold;
+}
+.card-text{
+    text-align: left;
+    color: #999b9d;
+    font-weight: bold;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    grid-gap: 45px;
+    align-items: stretch;
+}
+
+.nav{
+    background-color: #ffffff;
+    position: sticky top;
+    padding: auto;
+    font-size: 15px;
+}
+.nav-link{
+    color: #313D60;
+    font-weight: bold;
+}
+h1{
+    text-align: left;
+    color: #313D60;
+    font-weight: bold;
+    font-size: 35px;
+}
+.navbar{
+    background-color: none;
+    font-weight: lighter;
 }

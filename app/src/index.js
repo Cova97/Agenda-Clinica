@@ -4,6 +4,9 @@ import FormLogin from './Login';
 import FormCita from './Agenda';
 import FormSingIn from './SingIn';
 import Dates from './Calendario';
+import Dashboard from './components/Dashboard';
+import FormDirectorio from './components/Directorio';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
