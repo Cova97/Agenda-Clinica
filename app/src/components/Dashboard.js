@@ -1,32 +1,17 @@
 import React, {useState} from "react";
+import NavDash from "./NavDash";
 
 const Dashboard = () => {
     return (
         <div>
-            <ul className="nav  justify-content-center">
-                <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="./Agendar.js">Agendar</a>
-                </li>
-                <li>
-                    <a className="nav-link active" aria-current="page" href="./Directorio.js">Directorio</a>
-                </li>
-                <li>
-                    <a className="nav-link active" aria-current="page" href="#">Ficha Clínica</a>
-                </li>
-                <li>
-                    <a className="nav-link active" aria-current="page" href="#">Recórd Médico</a>
-                </li>
-                <li>
-                    <a className="nav-link active" aria-current="page" href="#">Cerrar sesión</a>
-                </li>
-            </ul>
+            <NavDash/>
             <div></div>
             <div>
                 <h1>Citas agendadas</h1>
                 <h2>
                     <ul className="nav flex-column flex-sm-row">
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#">Hora</a>
+                            <a className="nav-link" aria-current="page">Hora</a>
                         </li>
                         <li>
                             <a className="nav-link" aria-current="page">Fecha</a>

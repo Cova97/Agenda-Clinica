@@ -1,14 +1,15 @@
 import React, {useState} from "react";
-import FormCita from "../Agenda";
-import Dates from "../Calendario";
+import FormCita from "./Agenda";
+import Dates from "./Calendario";
+import NavCom from "./NavCom";
 
 const Agendar = () => {
     return (
         <div>
-            <h1>Bienvenido a la clinica de la vida</h1>
+            <NavCom/>
+            <h1>Agenda tu cita</h1>
             <FormCita/>
             <Dates/>
-            <button onClick={() => cambiarInicio(false)}>Cerrar Sesion</button>
         </div>
     );
 };

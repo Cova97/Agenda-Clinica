@@ -1,13 +1,10 @@
 import React, {useState} from "react";
-
+import NavCom
+ from "./NavCom";
 const FormDirectorio = () => {
     return (
         <div>
-            <ul className="nav">
-                <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="./Dashboard.js">Inicio</a>
-                </li>
-            </ul>
+            <NavCom/>
             <div><p></p></div>
             <div className="grid"> 
                     <div className='card'>

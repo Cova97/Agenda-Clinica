@@ -32,6 +32,7 @@ const FormSingIn = (props) => {
 
     return(
         <>
+        <div className="d-flex justify-content-center">
             <form action="" onSubmit={onSubmit}>
                 <div>
                     <label htmlFor="newUser">Nuevo Usuario</label>
@@ -62,6 +63,7 @@ const FormSingIn = (props) => {
                 </div>
                 <button>Confirmar</button>
             </form>
+        </div>
         </>
     );
 };

@@ -28,6 +28,7 @@ const FormLogin = (props) => {
 
     return(
         <>
+        <div className="d-flex justify-content-center">
             <form action="" onSubmit={onSubmit}>
                 <div>
                     <label htmlFor="user">Usuario</label>
@@ -49,6 +50,8 @@ const FormLogin = (props) => {
                 </div>
                 <button>Confirmar</button>
             </form>
+        </div>
+            
         </>
     );
 };

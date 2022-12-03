@@ -4,35 +4,44 @@ body{
 }
 
 button{
-    background-color: #3D83DF;
-    border: none;
-    color: white;
-    padding: 15px 32px;
+    background-color: #ffffff;
+    border-color:  #3D83DF;
+    border-radius: 10px;
+    color: #3D83DF;
+    padding: 5px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    transition: all 500ms ease; 
+}
+button:hover{
+    color: #ffffff;
+    background: #3D83DF;
 }
 
 input[type=text], select {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 5px 30px;
+    margin: 8px 15px;
+    width: 80%;
+    border: 5px solid #ccc;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 5px ;
+    border-radius: 5px;
     box-sizing: border-box;
-}
+  }
 
 input[type=password], select {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 5px 35px;
+    margin: 8px 15px;
+    width: 80%;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
@@ -45,6 +54,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    align-items: center;
 }
 
 input[type=submit]:hover {
@@ -94,8 +104,8 @@ div {
 .nav{
     background-color: #ffffff;
     position: sticky top;
-    padding: auto;
     font-size: 15px;
+    border-radius: 5px;
 }
 .nav-link{
     color: #313D60;
@@ -107,7 +117,27 @@ h1{
     font-weight: bold;
     font-size: 35px;
 }
+h2{
+    color: #313D60;
+    font-weight: bold;
+    text-align: center;
+}
 .navbar{
     background-color: none;
     font-weight: lighter;
+}
+.navbar-brand{
+    color:  #3D83DF;
+    font-weight: bold;
+    font-size: 35px;
+}
+label{
+    color: #313D60;
+    font-weight:lighter;
+    text-align: center;
+}
+.btn{
+    color:  #313D60;
+    font-weight: bold;
+    font-size: 16px;
 }
